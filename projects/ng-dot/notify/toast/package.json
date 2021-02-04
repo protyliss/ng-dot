@@ -10,6 +10,8 @@
         "@angular/core": "@angular/core",
         "@ng-dot/core": "@ng-dot/core",
         "@ng-dot/layout": "@ng-dot/layout",
+        "@ng-dot/layout/lift": "@ng-dot/layout/lift",
+        "@ng-dot/layout/trans": "@ng-dot/layout/trans",
         "@ng-dot/notify": "@ng-dot/notify"
       }
     }

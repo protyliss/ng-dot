@@ -9,7 +9,8 @@
         "@angular/common": "@angular/common",
         "@angular/core": "@angular/core",
         "@ng-dot/form": "@ng-dot/form",
-        "@ng-dot/layout": "@ng-dot/layout"
+        "@ng-dot/layout": "@ng-dot/layout",
+        "@ng-dot/layout/grid": "@ng-dot/layout/grid"
       }
     }
   }

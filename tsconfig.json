@@ -20,13 +20,13 @@
         "projects/ng-dot/api/src/public-api"
       ],
       "@ng-dot/core": [
-        "projects/ng-dot/core/src/public-api"
+        "dist/ng-dot/core"
       ],
       "@ng-dot/form": [
         "projects/ng-dot/form/src/public-api"
       ],
       "@ng-dot/layout": [
-        "projects/ng-dot/layout/src/public-api"
+        "dist/ng-dot/layout"
       ],
       "@ng-dot/notify": [
         "projects/ng-dot/notify/src/public-api"
@@ -35,10 +35,10 @@
         "projects/ng-dot/panel/src/public-api"
       ],
       "@ng-dot/route": [
-        "projects/ng-dot/route/src/public-api"
+        "dist/ng-dot/route"
       ],
       "@ng-dot/talk": [
-        "projects/ng-dot/talk/src/public-api"
+        "dist/ng-dot/talk"
       ],
       "@ng-dot/form/assists": [
         "projects/ng-dot/form/assists/public-api"
@@ -56,55 +56,55 @@
         "projects/ng-dot/form/select/public-api"
       ],
       "@ng-dot/layout/background-image": [
-        "projects/ng-dot/layout/background-image/public-api"
+        "dist/ng-dot/layout/background-image"
       ],
       "@ng-dot/layout/box": [
-        "projects/ng-dot/layout/box/public-api"
+        "dist/ng-dot/layout/box"
       ],
       "@ng-dot/layout/grid": [
-        "projects/ng-dot/layout/grid/public-api"
+        "dist/ng-dot/layout/grid"
       ],
       "@ng-dot/layout/icon": [
-        "projects/ng-dot/layout/icon/public-api"
+        "dist/ng-dot/layout/icon"
       ],
       "@ng-dot/layout/lift": [
-        "projects/ng-dot/layout/lift/public-api"
+        "dist/ng-dot/layout/lift"
       ],
       "@ng-dot/layout/link": [
-        "projects/ng-dot/layout/link/public-api"
+        "dist/ng-dot/layout/link"
       ],
       "@ng-dot/layout/loader": [
-        "projects/ng-dot/layout/loader/public-api"
+        "dist/ng-dot/layout/loader"
       ],
       "@ng-dot/layout/navs": [
-        "projects/ng-dot/layout/navs/public-api"
+        "dist/ng-dot/layout/navs"
       ],
       "@ng-dot/layout/page-links": [
-        "projects/ng-dot/layout/page-links/public-api"
+        "dist/ng-dot/layout/page-links"
       ],
       "@ng-dot/layout/pose": [
-        "projects/ng-dot/layout/pose/public-api"
+        "dist/ng-dot/layout/pose"
       ],
       "@ng-dot/layout/ratio-box": [
-        "projects/ng-dot/layout/ratio-box/public-api"
+        "dist/ng-dot/layout/ratio-box"
       ],
       "@ng-dot/layout/ripple": [
-        "projects/ng-dot/layout/ripple/public-api"
+        "dist/ng-dot/layout/ripple"
       ],
       "@ng-dot/layout/scroll-push": [
-        "projects/ng-dot/layout/scroll-push/public-api"
+        "dist/ng-dot/layout/scroll-push"
       ],
       "@ng-dot/layout/splash": [
-        "projects/ng-dot/layout/splash/public-api"
+        "dist/ng-dot/layout/splash"
       ],
       "@ng-dot/layout/tab": [
-        "projects/ng-dot/layout/tab/public-api"
+        "dist/ng-dot/layout/tab"
       ],
       "@ng-dot/layout/trans": [
-        "projects/ng-dot/layout/trans/public-api"
+        "dist/ng-dot/layout/trans"
       ],
       "@ng-dot/layout/width": [
-        "projects/ng-dot/layout/width/public-api"
+        "dist/ng-dot/layout/width"
       ],
       "@ng-dot/notify/toast": [
         "projects/ng-dot/notify/toast/public-api"
@@ -113,7 +113,7 @@
         "projects/ng-dot/panel/layer/public-api"
       ],
       "@ng-dot/talk/operators": [
-        "projects/ng-dot/talk/operators/public-api"
+        "dist/ng-dot/talk/operators"
       ]
     }
   }

@@ -11,6 +11,7 @@
         "@angular/router": "@angular/router",
         "@ng-dot/core": "@ng-dot/core",
         "@ng-dot/layout": "@ng-dot/layout",
+        "@ng-dot/layout/icon": "@ng-dot/layout/icon",
         "rxjs": "rxjs"
       }
     }

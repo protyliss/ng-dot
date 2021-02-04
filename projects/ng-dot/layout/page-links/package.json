@@ -10,6 +10,7 @@
         "@angular/core": "@angular/core",
         "@angular/router": "@angular/router",
         "@ng-dot/core": "@ng-dot/core",
+        "@ng-dot/layout/trans": "@ng-dot/layout/trans",
         "@ng-dot/route": "@ng-dot/route",
         "rxjs": "rxjs",
         "rxjs/operators": "rxjs/operators"

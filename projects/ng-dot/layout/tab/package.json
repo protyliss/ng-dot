@@ -6,10 +6,12 @@
         "../../../../node_modules"
       ],
       "umdModuleIds": {
+        "@angular/cdk/portal": "@angular/cdk/portal",
         "@angular/common": "@angular/common",
         "@angular/core": "@angular/core",
         "@ng-dot/core": "@ng-dot/core",
-        "@ng-dot/layout": "@ng-dot/layout"
+        "@ng-dot/layout": "@ng-dot/layout",
+        "@ng-dot/layout/grid": "@ng-dot/layout/grid"
       }
     }
   }
