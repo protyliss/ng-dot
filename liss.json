@@ -1,0 +1,9 @@
+{
+  "ng": {
+    "optimizeScript": {
+    },
+    "optimizeTslint": {
+      "^@ng-dot": "dot"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts",
+      "styleIncludePaths": [
+        "../../../../node_modules"
+      ],
+      "umdModuleIds": {
+        "@angular/core": "@angular/core",
+        "@ng-dot/core": "@ng-dot/core"
+      }
+    }
+  }
+}

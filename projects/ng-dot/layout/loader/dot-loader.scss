@@ -1,0 +1,13 @@
+@import '~@lisslet/cssdot/src/loader/standalone';
+
+@include loader-rule;
+
+dot-loader {
+	display: block;
+	text-align: center;
+
+	&._inline {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

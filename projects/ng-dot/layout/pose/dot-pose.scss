@@ -1,0 +1,15 @@
+@import '~@lisslet/cssdot/src/pose/index';
+
+.dot-row {
+	&._middle {
+		align-items: center;
+	}
+	
+	&._around {
+		justify-content: space-around;	
+	}
+	
+	&._between {
+		justify-content: space-between;
+	}
+}

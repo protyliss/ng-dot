@@ -1,0 +1,11 @@
+<dot-area>
+	<dot-pad>
+		<dot-icon *ngIf="icon" [group]="iconGroup" [label]="icon"></dot-icon>
+		<ng-container *ngIf="heading; else displayContent">
+			<span [innerHTML]="heading"></span>
+		</ng-container>
+		<ng-template #displayContent>
+			<span><ng-content></ng-content></span>
+		</ng-template>
+	</dot-pad>
+</dot-area>

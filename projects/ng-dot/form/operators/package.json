@@ -1,0 +1,15 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts",
+      "styleIncludePaths": [
+        "../../../../node_modules"
+      ],
+      "umdModuleIds": {
+        "@angular/forms": "@angular/forms",
+        "@ng-dot/core": "@ng-dot/core",
+        "@ng-dot/form": "@ng-dot/form"
+      }
+    }
+  }
+}

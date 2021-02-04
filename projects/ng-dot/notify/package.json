@@ -1,0 +1,11 @@
+{
+  "name": "@ng-dot/notify",
+  "version": "21.4.0",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/core": "~10.2.4",
+    "@ng-dot/core": "21.4.0"
+  }
+}

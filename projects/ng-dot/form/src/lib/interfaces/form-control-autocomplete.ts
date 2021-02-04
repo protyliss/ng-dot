@@ -1,0 +1,15 @@
+export type FormControlAutocomplete =
+	| 'name'
+	| 'family-name'
+	| 'given-name'
+	| 'username'
+	| 'email'
+	| 'postal-code'
+	| 'address-level1'
+	| 'address-level2'
+	| 'address-line1'
+	| 'address-line2'
+	| 'organization'
+	| 'off'
+	| 'new-password'
+	| 'current-password';

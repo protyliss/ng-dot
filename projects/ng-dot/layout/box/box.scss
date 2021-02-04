@@ -1,0 +1,32 @@
+@import '~@lisslet/cssdot/src/box/index';
+
+@include box-rule;
+
+dot {
+	&-box {
+		&,
+		&-media,
+		&-head,
+		&-main,
+		&-foot {
+			display: block;
+		}
+	}
+}
+
+.dot-box {
+	&-area {
+		position: relative;
+	}
+}
+
+.dot-box-head {
+	position: relative;
+
+	> .context-links {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+	}
+}

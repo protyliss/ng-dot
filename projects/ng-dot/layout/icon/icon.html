@@ -1,0 +1,11 @@
+<ng-container *ngIf="withLabel">
+	<ng-container *ngIf="innerHTML; else displayContent">
+		<span class="icon-label" [innerHTML]="innerHTML">
+		</span>
+	</ng-container>
+	<ng-template #displayContent>
+		<span class="icon-label">
+			<ng-content></ng-content>
+		</span>
+	</ng-template>
+</ng-container>

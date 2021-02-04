@@ -1,0 +1,120 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "@ng-dot/api": [
+        "projects/ng-dot/api/src/public-api"
+      ],
+      "@ng-dot/core": [
+        "projects/ng-dot/core/src/public-api"
+      ],
+      "@ng-dot/form": [
+        "projects/ng-dot/form/src/public-api"
+      ],
+      "@ng-dot/layout": [
+        "projects/ng-dot/layout/src/public-api"
+      ],
+      "@ng-dot/notify": [
+        "projects/ng-dot/notify/src/public-api"
+      ],
+      "@ng-dot/panel": [
+        "projects/ng-dot/panel/src/public-api"
+      ],
+      "@ng-dot/route": [
+        "projects/ng-dot/route/src/public-api"
+      ],
+      "@ng-dot/talk": [
+        "projects/ng-dot/talk/src/public-api"
+      ],
+      "@ng-dot/form/assists": [
+        "projects/ng-dot/form/assists/public-api"
+      ],
+      "@ng-dot/form/delayed-options": [
+        "projects/ng-dot/form/delayed-options/public-api"
+      ],
+      "@ng-dot/form/file-preview": [
+        "projects/ng-dot/form/file-preview/public-api"
+      ],
+      "@ng-dot/form/operators": [
+        "projects/ng-dot/form/operators/public-api"
+      ],
+      "@ng-dot/form/select": [
+        "projects/ng-dot/form/select/public-api"
+      ],
+      "@ng-dot/layout/background-image": [
+        "projects/ng-dot/layout/background-image/public-api"
+      ],
+      "@ng-dot/layout/box": [
+        "projects/ng-dot/layout/box/public-api"
+      ],
+      "@ng-dot/layout/grid": [
+        "projects/ng-dot/layout/grid/public-api"
+      ],
+      "@ng-dot/layout/icon": [
+        "projects/ng-dot/layout/icon/public-api"
+      ],
+      "@ng-dot/layout/lift": [
+        "projects/ng-dot/layout/lift/public-api"
+      ],
+      "@ng-dot/layout/link": [
+        "projects/ng-dot/layout/link/public-api"
+      ],
+      "@ng-dot/layout/loader": [
+        "projects/ng-dot/layout/loader/public-api"
+      ],
+      "@ng-dot/layout/navs": [
+        "projects/ng-dot/layout/navs/public-api"
+      ],
+      "@ng-dot/layout/page-links": [
+        "projects/ng-dot/layout/page-links/public-api"
+      ],
+      "@ng-dot/layout/pose": [
+        "projects/ng-dot/layout/pose/public-api"
+      ],
+      "@ng-dot/layout/ratio-box": [
+        "projects/ng-dot/layout/ratio-box/public-api"
+      ],
+      "@ng-dot/layout/ripple": [
+        "projects/ng-dot/layout/ripple/public-api"
+      ],
+      "@ng-dot/layout/scroll-push": [
+        "projects/ng-dot/layout/scroll-push/public-api"
+      ],
+      "@ng-dot/layout/splash": [
+        "projects/ng-dot/layout/splash/public-api"
+      ],
+      "@ng-dot/layout/tab": [
+        "projects/ng-dot/layout/tab/public-api"
+      ],
+      "@ng-dot/layout/trans": [
+        "projects/ng-dot/layout/trans/public-api"
+      ],
+      "@ng-dot/layout/width": [
+        "projects/ng-dot/layout/width/public-api"
+      ],
+      "@ng-dot/notify/toast": [
+        "projects/ng-dot/notify/toast/public-api"
+      ],
+      "@ng-dot/panel/layer": [
+        "projects/ng-dot/panel/layer/public-api"
+      ],
+      "@ng-dot/talk/operators": [
+        "projects/ng-dot/talk/operators/public-api"
+      ]
+    }
+  }
+}

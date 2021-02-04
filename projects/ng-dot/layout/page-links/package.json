@@ -1,0 +1,19 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts",
+      "styleIncludePaths": [
+        "../../../../node_modules"
+      ],
+      "umdModuleIds": {
+        "@angular/common": "@angular/common",
+        "@angular/core": "@angular/core",
+        "@angular/router": "@angular/router",
+        "@ng-dot/core": "@ng-dot/core",
+        "@ng-dot/route": "@ng-dot/route",
+        "rxjs": "rxjs",
+        "rxjs/operators": "rxjs/operators"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.dot-layer {
+	display: block;
+	position: fixed;
+
+	z-index: 500;
+	background-color: #fff;
+
+	animation: 0.48s -dot-layer both;
+	transform-origin: center;
+
+	transition-property: top, left, width, height;
+	transition-duration: 0.48s;
+
+	overflow: auto;
+	
+	cursor: move;
+
+	.dot-pad {
+		cursor: default;
+		margin: 20px;
+	}
+
+	article {
+		position: relative;
+	}
+
+	header {
+		cursor: move;
+
+		&:empty {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 1rem;
+			background-color: red;
+		}
+	}
+
+	&._element-move {
+		opacity: 0.64;
+	}
+}
+
+@keyframes -dot-layer {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+}

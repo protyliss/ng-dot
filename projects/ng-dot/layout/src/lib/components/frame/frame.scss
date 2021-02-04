@@ -1,0 +1,22 @@
+@import '~@lisslet/cssdot/src/reset';
+@import '~@lisslet/cssdot/src/frame/index';
+
+@include frame-rule;
+
+dot {
+	&s,
+	&-head,
+	&-main,
+	&-main-head,
+	&-main-title,
+	&-foot,
+	&-navs,
+	&-area,
+	&-pad {
+		display: block;
+	}
+
+	&s {
+		min-height: 100vh !important;
+	}
+}

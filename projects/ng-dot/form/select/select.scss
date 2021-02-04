@@ -1,0 +1,11 @@
+.dot-select {
+  display: inline-block;
+
+  li {
+    cursor: pointer;
+
+    &._selected {
+      font-weight: bold;
+    }
+  }
+}

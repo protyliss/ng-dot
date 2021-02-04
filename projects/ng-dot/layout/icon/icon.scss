@@ -1,0 +1,12 @@
+.icon {
+	&:before {
+		display: inline-block;
+		text-underline: none;
+		font-weight: normal !important;
+		vertical-align: middle;
+	}
+
+	&24:before {
+		font-size: 24px;
+	}
+}

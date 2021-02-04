@@ -1,0 +1,9 @@
+@import '~@lisslet/cssdot/src/nav/standalone';
+
+@include nav-rule;
+
+dot-nav {
+	&, &s {
+		display: block;
+	}
+}

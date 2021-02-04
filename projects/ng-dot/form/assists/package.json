@@ -1,0 +1,14 @@
+{
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public-api.ts",
+      "styleIncludePaths": [
+        "../../../../node_modules"
+      ],
+      "umdModuleIds": {
+        "@ng-dot/form": "@ng-dot/form",
+        "rxjs": "rxjs"
+      }
+    }
+  }
+}

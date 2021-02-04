@@ -1,0 +1,17 @@
+.dot-ratio-box {
+	display: block;
+	position: relative;
+	height: 0;
+	overflow: hidden;
+
+	&-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	img.dot-ratio-box-content {
+		width: 100%;
+	}
+}

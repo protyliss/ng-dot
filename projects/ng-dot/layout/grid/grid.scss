@@ -1,0 +1,7 @@
+@import '~@lisslet/cssdot/src/grid/standalone';
+
+@include grid-rule;
+
+._gap-0 {
+	grid-gap: 0 !important;
+}

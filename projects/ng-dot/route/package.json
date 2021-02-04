@@ -1,0 +1,13 @@
+{
+  "name": "@ng-dot/route",
+  "version": "21.4.0",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "~10.2.4",
+    "@angular/core": "~10.2.4",
+    "@angular/router": "~10.2.4",
+    "@ng-dot/core": "21.4.0"
+  }
+}
