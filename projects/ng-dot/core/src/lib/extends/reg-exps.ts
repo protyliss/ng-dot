@@ -1,7 +1,7 @@
+// @dynamic
 export class RegExps extends RegExp {
 	static readonly NUMBER = /^\d+$/;
 	static readonly NUMERIC = /^[+-]?\d+(\.\d+)?$/;
-
 	static readonly EMAIL = /^\w[_\-+\w]*@([\-\w]+)(\.[\-\w]+)+$/;
 
 	/**
@@ -24,7 +24,7 @@ export class RegExps extends RegExp {
 	static readonly PATH = /^(\/?[\w-:]+)(\/[\w-:]+)+$/;
 
 	static readonly IP4 = /^\d{1,3}(\.\d{1,3}){3}$/;
-	
+
 	static readonly TRUE_LIKE = /^true|[+-]?[1-9]\d*$/i;
 
 	static escape(pattern: string) {

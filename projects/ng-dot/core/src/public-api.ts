@@ -38,11 +38,7 @@ export * from './lib/functions/objects/assign';
 
 export * from './lib/functions/render/render-non-kr';
 
-export * from './lib/functions/rxjs/catch-error-array';
-export * from './lib/functions/rxjs/catch-error-null';
 export * from './lib/functions/rxjs/check-subscription';
-export * from './lib/functions/rxjs/empty-filter';
-export * from './lib/functions/rxjs/null-filterer';
 export * from './lib/functions/rxjs/of-false';
 export * from './lib/functions/rxjs/reset-subscription';
 

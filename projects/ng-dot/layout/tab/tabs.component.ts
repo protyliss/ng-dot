@@ -107,20 +107,19 @@ export class TabsComponent implements AfterContentInit {
 
 	@Input() listPosition: 'top' | 'bottom' | 'both' = 'top';
 
-	@Output() changed$ = new EventEmitter;
+	@Output() changed$ = new EventEmitter();
 
 
 	@ContentChildren(TabComponent) protected _tabComponents: QueryList<TabComponent>;
-	
-	protected _selected: TabComponent;
 
 	protected _thisUpdate = this._update.bind(this);
 	protected _autoUnselectable: boolean;
 	_init: boolean;
 
 	_tabs: TabComponent[] = [];
+	_selected: TabComponent;
 	_selectedAll: boolean;
-	
+
 	@ContentChild(TabAllDirective, {static: true}) _tabAll: TabAllDirective;
 
 	get displayLink() {

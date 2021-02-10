@@ -26,23 +26,23 @@ export class DotSplashComponent implements OnInit {
 	private _node: HTMLElement;
 
 	@Input() id = 'default';
-	
+
 	@Input() duration = 2000;
-	
+
 	@Input() loop = false;
 
 	constructor(
-		@Inject(DOCUMENT) document: HTMLDocument,
+		@Inject(DOCUMENT) document: any,
 		_elementRef: ElementRef,
 	) {
-		this._documentClassList = document.documentElement.classList;
+		this._documentClassList = (document as Document).documentElement.classList;
 		this._node = _elementRef.nativeElement;
 	}
 
 	ngOnInit(): void {
 		const {id, _documentClassList, _node} = this;
 		const cookieId = 'splash_' + id;
-		
+
 		if ($splashes[id] || (!this.loop && getCookie(cookieId))) {
 			return;
 		}

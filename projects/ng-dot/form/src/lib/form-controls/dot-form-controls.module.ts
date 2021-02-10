@@ -19,7 +19,7 @@ const views = [
 		DotDynamicComponentMarkerModule,
 		DotFormFieldModule
 	],
-	exports: views,
+	exports: views
 })
 export class DotFormControlsModule {
 

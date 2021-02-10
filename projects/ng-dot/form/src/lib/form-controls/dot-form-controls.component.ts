@@ -24,6 +24,7 @@ import {DotFormTextareaComponent} from './dot-form-textarea.component';
 	selector: 'dot-form-controls',
 	template: `
 		<dot-dynamic-component-marker></dot-dynamic-component-marker>
+    <ng-template #marekr></ng-template>
 	`,
 	styleUrls: ['dot-form-controls.scss'],
 	encapsulation: ViewEncapsulation.None,

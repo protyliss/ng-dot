@@ -14,8 +14,8 @@ export class DotResizeEventService {
 	width$: Observable<number>;
 	height$: Observable<number>;
 
-	constructor(@Inject(DOCUMENT) document: HTMLDocument) {
-		this._documentElement = document.documentElement;
+	constructor(@Inject(DOCUMENT) document: any) {
+		this._documentElement = (document as Document).documentElement;
 
 		const size$ = new BehaviorSubject(this.getSize());
 

@@ -15,7 +15,7 @@ import {IconComponent} from './icon.component';
 export class Icon24Component extends IconComponent {
 	@Input('dot-icon24') set fromSelector(icon: string) {
 		if (icon) {
-			this.innerHTML = icon;
+			this.label = icon;
 		}
 	}
 

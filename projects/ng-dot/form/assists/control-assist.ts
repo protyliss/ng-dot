@@ -1,5 +1,5 @@
 import {Subject} from 'rxjs';
-import {FormControlAssistConfigure} from '@ng-dot/form';
+import {FormControlAssistConfigure} from './interfaces';
 import {ASSISTERS} from './assisters';
 
 export class ControlAssist {
@@ -101,7 +101,7 @@ export class ControlAssist {
 				this.assisted$.next(replace);
 			}
 		}
-		
+
 		this._lastValue = replace;
 
 		return true;

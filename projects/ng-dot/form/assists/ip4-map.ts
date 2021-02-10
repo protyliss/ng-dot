@@ -1,4 +1,4 @@
-import {FormControlAssistConfigure} from '@ng-dot/form';
+import {FormControlAssistConfigure} from './interfaces';
 
 export const ip4Map: FormControlAssistConfigure = {
 	add: [

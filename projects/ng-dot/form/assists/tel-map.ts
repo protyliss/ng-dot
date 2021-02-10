@@ -1,19 +1,19 @@
-import {FormControlAssistConfigure} from '@ng-dot/form';
+import {FormControlAssistConfigure} from './interfaces';
 
 export const telMap: FormControlAssistConfigure = {
 	add: [
 		[/\s{2,}/g, ' '],
-		
+
 		// 12 1 => +12 1
 		[/^(\d+\s)$/, '+$1'],
 
 		// [/^(\+\d+\s)\s+/, '$1'],
 
-		// +82^0 => +82 ^0, korea 
+		// +82^0 => +82 ^0, korea
 		[/^\+?82([^0])$/, '+82 $1'],
 
 		// except 0
-		// +12 12 => +12 1-2 
+		// +12 12 => +12 1-2
 		[/^(\+\d+\s)([^0\s])(\d)$/, '$1$2-$3'],
 
 		// +12 ^0-1234 => +12 ^0-123-4

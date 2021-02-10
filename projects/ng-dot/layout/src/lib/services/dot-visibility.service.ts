@@ -20,7 +20,9 @@ let $intersectionObserver: IntersectionObserver;
 	providedIn: 'root'
 })
 export class DotVisibilityService {
-	constructor(@Inject(DOCUMENT) protected document: Document) {
+	protected document: Document;
+	constructor(@Inject(DOCUMENT) document: any) {
+		this.document = document as Document;
 		document.addEventListener('visibilitychange', onVisibilityChange);
 		$intersectionObserver = new IntersectionObserver(onIntersectionChange);
 	}

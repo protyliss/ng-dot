@@ -9,10 +9,10 @@ export class DotScrollStateService {
 
 	constructor(
 		protected _scrollEvent: DotScrollEventService,
-		@Inject(DOCUMENT) document: HTMLDocument
+		@Inject(DOCUMENT) document: any
 	) {
 
-		const {documentElement} = document;
+		const {documentElement} = document as Document;
 
 		const ignoreTime = 240;
 

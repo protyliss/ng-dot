@@ -30,7 +30,7 @@ export class DotScrollEventService {
 	xScrolled$: Observable<boolean>;
 	yScrolled$: Observable<boolean>;
 
-	constructor(@Inject(DOCUMENT) document: HTMLDocument) {
+	constructor(@Inject(DOCUMENT) document: any) {
 
 		const position$ = new BehaviorSubject(this._getPosition());
 		const scrolling$ = new Subject<boolean>();
@@ -84,7 +84,7 @@ export class DotScrollEventService {
 			scrolling$.next(false);
 		}
 
-		fromEvent(document, 'scroll')
+		fromEvent((document as Document), 'scroll')
 			.subscribe(() => {
 				position$.next(this._getPosition());
 				scrolling$.next(true);

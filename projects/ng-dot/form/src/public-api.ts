@@ -1,5 +1,4 @@
 //<editor-fold desc="Interfaces">
-export * from './lib/interfaces/form-control-assist';
 export * from './lib/interfaces/form-control-attributes';
 export * from './lib/interfaces/form-control-autocomplete';
 export * from './lib/interfaces/form-control-interface';

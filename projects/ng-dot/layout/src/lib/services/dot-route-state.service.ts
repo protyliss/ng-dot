@@ -15,7 +15,7 @@ export class DotRouteStateService {
 
 	constructor(
 		protected _routeEvent: DotRouteEventService,
-		@Inject(DOCUMENT) document: HTMLDocument
+		@Inject(DOCUMENT) document: any
 	) {
 
 		this._documentElement = document.documentElement;
@@ -23,7 +23,7 @@ export class DotRouteStateService {
 		_routeEvent.started$
 			.subscribe(url => {
 				if (url.indexOf('#') < 0) {
-					const scroller = document.querySelector('[data-scroller]') as HTMLElement;
+					const scroller = (document as Document).querySelector('[data-scroller]') as HTMLElement;
 					if (scroller && scroller.dataset.scroller === 'true') {
 						scroller.scrollTo(0, 0);
 					} else {

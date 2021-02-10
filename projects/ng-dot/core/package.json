@@ -1,12 +1,12 @@
 {
   "name": "@ng-dot/core",
-  "version": "21.4.0",
+  "version": "21.41.1",
   "dependencies": {
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "~10.2.4",
-    "@angular/core": "~10.2.4",
-    "@angular/platform-browser": "~10.2.4"
+    "@angular/common": "~11.1.2",
+    "@angular/core": "~11.1.2",
+    "@angular/platform-browser": "~11.1.2"
   }
 }

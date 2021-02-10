@@ -19,23 +19,17 @@ export class MixinComponent implements OnInit, OnChanges, OnDestroy {
 
 	/**
 	 * Components Mixin One
-	 * @param a
 	 */
 	static apply<T extends Constructor<MixinComponent>,
 		A extends (Base: T) => T>(a: A): ReturnType<A>;
 	/**
 	 * Components Mixin Two
-	 * @param a
-	 * @param b
 	 */
 	static apply<T extends Constructor<MixinComponent>,
 		A extends (Base: T) => T,
 		B extends (Base: ReturnType<A>) => T>(a: A, b: B): ReturnType<B>;
 	/**
 	 * Components Mixin Tree
-	 * @param a
-	 * @param b
-	 * @param c
 	 */
 	static apply<T extends Constructor<MixinComponent>,
 		A extends (Base: T) => T,
@@ -43,10 +37,6 @@ export class MixinComponent implements OnInit, OnChanges, OnDestroy {
 		C extends (Base: ReturnType<B>) => T>(a: A, b: B, c: C): ReturnType<C>;
 	/**
 	 * Components Mixin Four
-	 * @param a
-	 * @param b
-	 * @param c
-	 * @param d
 	 */
 	static apply<T extends Constructor<MixinComponent>,
 		A extends (Base: T) => T,
@@ -56,11 +46,6 @@ export class MixinComponent implements OnInit, OnChanges, OnDestroy {
 		>(a: A, b: B, c: C, d: D): ReturnType<D>;
 	/**
 	 * Components Mixin Five
-	 * @param a
-	 * @param b
-	 * @param c
-	 * @param d
-	 * @param e
 	 */
 	static apply<T extends Constructor<MixinComponent>,
 		A extends (Base: T) => T,
@@ -71,10 +56,10 @@ export class MixinComponent implements OnInit, OnChanges, OnDestroy {
 		>(a: A, b: B, c: C, d: D, e: E): ReturnType<E>;
 	/**
 	 * Components Mixin
-	 * @param mixins
 	 */
 	static apply(...mixins: any[]) {
 		return mixins.reduce(
+			// @dynamic
 			(baseClass, mixin) => {
 				return mixin(baseClass);
 			},

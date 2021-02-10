@@ -1,37 +1,35 @@
-import {NgModule}     from '@angular/core';
+import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {DelayedOptionsDirective} from './delayed-options.directive';
+
 const views = [
-  DelayedOptionsDirective
+	DelayedOptionsDirective
 ];
 
-const localViews =  [
-];
+const localViews = [];
 
 const modules = [
-    CommonModule
+	CommonModule
 ];
 
-const localModules = [
-];
+const localModules = [];
 
-const providers = [
-];
+const providers = [];
 
 @NgModule({
-    declarations: [
-        ...views,
-        ...localViews
-    ],
-    imports: [
-        ...modules,
-        ...localModules
-    ],
-    exports: [
-        ...views,
-        ...modules
-    ],
-    providers
+	declarations: [
+		...views,
+		...localViews
+	],
+	imports: [
+		...modules,
+		...localModules
+	],
+	exports: [
+		...views,
+		...modules
+	],
+	providers
 })
 export class DotDelayedOptionsDirectiveModule {
 

@@ -1,6 +1,8 @@
 /**
  * can convert to `Dates`
  */
+import {zerofill} from '../functions/numbers/zerofill';
+
 export type DateLike = Dates | Date | string | number;
 
 const $suffixes = [null, 'st', 'nd', 'rd'];
@@ -298,7 +300,7 @@ export class Dates extends Date {
 	 */
 	static m(date?: DateLike);
 	static m(date = new Dates) {
-		return zerofill_2(Dates.by(date).getMonth() + 1);
+		return zerofill(Dates.by(date).getMonth() + 1);
 	}
 
 
@@ -327,7 +329,7 @@ export class Dates extends Date {
 	 */
 	static h(date?: DateLike);
 	static h(date = new Dates) {
-		return zerofill_2(Dates.g(date));
+		return zerofill(Dates.g(date));
 	}
 
 	/**
@@ -336,7 +338,7 @@ export class Dates extends Date {
 	 */
 	static H(date?: DateLike);
 	static H(date = new Dates) {
-		return zerofill_2(Dates.by(date).getHours());
+		return zerofill(Dates.by(date).getHours());
 	}
 
 
@@ -346,7 +348,7 @@ export class Dates extends Date {
 	 */
 	static i(date?: DateLike);
 	static i(date = new Dates) {
-		return zerofill_2(Dates.by(date).getMinutes());
+		return zerofill(Dates.by(date).getMinutes());
 	}
 
 	/**
@@ -355,7 +357,7 @@ export class Dates extends Date {
 	 */
 	static s(date?: DateLike);
 	static s(date = new Dates) {
-		return zerofill_2(Dates.by(date).getSeconds());
+		return zerofill(Dates.by(date).getSeconds());
 	}
 
 
@@ -387,7 +389,7 @@ export class Dates extends Date {
 	 */
 	static d(date?: DateLike);
 	static d(date = new Dates) {
-		return zerofill_2(Dates.by(date).getDate());
+		return zerofill(Dates.by(date).getDate());
 	}
 
 	/**
@@ -585,7 +587,7 @@ export class Dates extends Date {
 	 * Day of the month, 2 digits with leading zeros
 	 */
 	d() {
-		return zerofill_2(this.getDate());
+		return zerofill(this.getDate());
 	}
 
 	/*
@@ -607,10 +609,10 @@ export class Dates extends Date {
 
 	/*
 	static l(date:Target){
-  
+
 	}
 	l(){
-  
+
 	}
 	*/
 
@@ -644,9 +646,9 @@ export class Dates extends Date {
 	 */
 	/*
 	static W(date: Target) {
-  
+
 	}
-  
+
 	W() {
 	  return Dates.W(this);
 	}
@@ -659,7 +661,7 @@ export class Dates extends Date {
 
 	/*
 	static F(date: Target){
-  
+
 	}
 	F(){
 	  return Dates.F(this);
@@ -671,7 +673,7 @@ export class Dates extends Date {
 	 * Numeric representation of a month, with leading zeros
 	 */
 	m() {
-		return zerofill_2(this.getMonth());
+		return zerofill(this.getMonth());
 	}
 
 	/**
@@ -681,11 +683,11 @@ export class Dates extends Date {
 
 	/*
 	static M(date: Target){
-  
+
 	}
-  
+
 	M(){
-  
+
 	}
 	 */
 
@@ -847,10 +849,4 @@ export class Dates extends Date {
 	// todo: c
 	// todo: r
 	// todo: U
-}
-
-function zerofill_2(value: number) {
-	return value < 10 ?
-		'0' + value :
-		value;
 }

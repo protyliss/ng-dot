@@ -17,13 +17,16 @@ export class DotScreenService {
 	full$ = new BehaviorSubject(false);
 	isFull = false;
 
-	constructor(@Inject(DOCUMENT) protected document: HTMLDocument) {
+	document: Document;
+
+	constructor(@Inject(DOCUMENT) document: any) {
+		this.document = document as Document;
 	}
 
 	full(target: ElementRef | HTMLElement);
 	full(target) {
 		const {document, full$} = this;
-		
+
 		const node = getNode(target);
 		const {classList} = node;
 

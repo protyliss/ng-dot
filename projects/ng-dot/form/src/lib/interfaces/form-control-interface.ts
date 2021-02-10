@@ -14,7 +14,7 @@ export interface FormControlInterface {
 
 	valid: boolean;
 	invalid: boolean;
-	
+
 	dirty: boolean;
 
 	/**
@@ -84,16 +84,16 @@ export interface FormControlInterface {
 	 * [pattern]
 	 */
 	pattern: string;
-	
+
 	options: FormSelectOption[];
 
 	forCreate: boolean;
 	forUpdate: boolean;
-	
+
 	setNode(node: HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement | HTMLElement);
-	
+
 	getNode(): HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement | HTMLElement;
-	
+
 	focus(): this;
 
 	reset(): this;
@@ -103,28 +103,28 @@ export interface FormControlInterface {
 	ready(): this;
 
 	getTypedValue(origin: any): string | number;
-	
+
 	setProperty(name: string, value: any): this;
-	
+
 	setAsyncProperty(name: string, value: any): this;
-	
+
 	asyncLoad(): this;
-	
+
 	asyncLoaded(): this;
 
 	setTransform(importer: (value: any) => any, exporter: (value: any) => any): this;
 
 	setValidator(name: string, validatorFunction: (...args: any[]) => any);
-	
+
 	setAsyncValidator(name: string, validatorFunction: (...args: any[]) => any);
-	
+
 	setElement(element: HTMLElement): this;
-	
-	setEvent(type: string, method: Function): this;
-	
+
+	setEvent(type: string, method: (...args: any[]) => any): this;
+
 	setValue(value): this;
-	
+
 	freeze(): this;
-	
+
 	release(): this;
 }

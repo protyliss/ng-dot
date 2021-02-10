@@ -13,14 +13,14 @@ export class DotHttpStateService {
 	isLoad$: Observable<boolean>;
 
 	constructor(
-		@Inject(DOCUMENT) document: HTMLDocument
+		@Inject(DOCUMENT) document: any
 	) {
 		this.isLoad$ = this._isLoad$
 			.pipe(
 				distinctUntilChanged()
 			);
 
-		(new SelectorToggle(document.documentElement, '_loading'))
+		(new SelectorToggle((document as Document).documentElement, '_loading'))
 			.take(this.isLoad$);
 	}
 
